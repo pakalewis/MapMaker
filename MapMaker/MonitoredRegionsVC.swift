@@ -103,7 +103,7 @@ class MonitoredRegionsVC: UIViewController, UITableViewDelegate, UITableViewData
         // get appropriate region
         let currentReminder = self.fetchedResultsController.fetchedObjects?[indexPath.row] as Reminder
         
-        cell.textLabel.text = currentReminder.identifier
+        cell.textLabel?.text = currentReminder.identifier
         return cell
     }
 
